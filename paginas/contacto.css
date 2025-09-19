@@ -1,0 +1,101 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding-top: 60px; /* espacio para que no tape el nav fijo */
+}
+
+/* ====== NAV ====== */
+nav.menu {
+  position: fixed; /* siempre visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+  z-index: 1000; /* encima del resto */
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav.menu a:hover {
+  color: #2c3e50; /* color al pasar el mouse */
+}
+
+/* ====== MAIN ====== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+main h1, main h2, main p {
+  margin-bottom: 15px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer form {
+  margin-top: 15px;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+footer button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #2c3e50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background: #e68900;
+}
