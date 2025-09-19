@@ -5,10 +5,10 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: #cccccc; 
-    color: white; 
+    color: rgb(235, 229, 229); 
     text-shadow: 2px 2px 4px #000000;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .content {
@@ -84,5 +84,33 @@ body {
 }
 
 #parrafo{
-    height: 1000px;
+    height: 700px;
 }
+
+.content_main{
+    max-width: 900px;
+    background-color: rgba(184, 155, 60, 0.342);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.quienes-somos{
+    color: #fbffca; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quienes-somos p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.pie-pagina{
+    text-align: center;
+}
+
+
+
+
