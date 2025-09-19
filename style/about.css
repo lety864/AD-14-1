@@ -1,5 +1,5 @@
 body {
-    background-image: url('../imagenes/fondo_somos.png');
+    background-image: url('../imagenes/about.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -84,7 +84,7 @@ body {
 }
 
 #parrafo{
-    height: 700px;
+    height: 300px;
 }
 
 .content_main{
