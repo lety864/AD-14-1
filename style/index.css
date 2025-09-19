@@ -1,6 +1,6 @@
 /* --- ESTILOS EXISTENTES --- */
 body {
-    background-image: url('../imagenes/img_1.png');
+    background-image: url('../imagenes/fondo_index.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ body {
 }
 
 #parrafo{
-    height: 700px;
+    height: 300px;
 }
 
 .caja{
