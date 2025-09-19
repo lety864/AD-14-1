@@ -1,5 +1,5 @@
 body {
-    background-image: url('../imagenes/img_1.png');
+    background-image: url('../imagenes/fondo_contact.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,6 +14,7 @@ body {
 .content {
     padding: 50px;
     text-align: center;
+
 }
 
 
@@ -84,6 +85,44 @@ body {
 }
 
 #parrafo{
-    height: 1000px;
+    height: 10px;
 }
 
+form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            text-shadow: none;
+        }
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+.pie-pagina{
+    text-align: center;
+}
