@@ -60,7 +60,40 @@ form {
             background-color: #0056b3;
         }
 .pie-pagina{
+    background-color: rgba(20, 33, 61, 0.85); /* Oxford Blue con 85% de opacidad */
+    color: var(--platinum);
     text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.developers-section h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.developers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 1.8;
+}
+
+.developers-list a {
+    color: var(--platinum);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developers-list a:hover {
+    color: var(--orange-web);
+}
+
+.team-credit {
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--white);
 }
 
 /* Estilo para el texto y los enlaces del navbar */
