@@ -43,46 +43,113 @@
     </div>
     </nav>
     
-    <div class="container mt-4">
-        <div class="row">
-            <div class="row mt-3">
-                <div class="col-2">columna 1</div>
-                <div class="col-8"> <!-- Aqui va todo el contenido -->
-                    <main class="content_main">
-                        <section>
-                            <h1 class="quienes-somos">Quiénes Somos</h1>
-                            <p>Bienvenidos a nuestro blog de <strong>Música Clásica</strong>. Somos un grupo de apasionados por la música que busca compartir la belleza, historia y técnica de este género con todos los amantes del arte musical.</p>
-                        </section>
-                    </main>
-                </div>
-            <div class="col-2">columna 3</div>
-        </div> 
-        
-        <div class="pie-pagina row mt-3">
-            <div class="col-12"> <!-- Aqui va el pie de pagina -->
-                pie de pagina
+
+
+  <div class="container mt-4">
+    <div class="row mt-3">
+      <div class="col-2"><!-- columna 1 --></div>
+
+      <div class="col-8"> <!-- Aqui va todo el contenido -->
+        <!-- CARD QUIENES SOMOS -->
+        <div class="card mb-4 shadow-sm">
+          <div class="row g-0 align-items-stretch"> 
+            <div class="col-md-4">
+              <img src="/imagenes/logo.jpg"
+                   class="img-fluid rounded-start h-100"
+                   alt="Foto logo"
+                   style="object-fit: cover;">
+
             </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Quiénes Somos</h5>
+                <p class="card-text text-justify">
+                  Bienvenidos a nuestro blog de <strong>Música Clásica</strong>. Somos <strong>Code&Coffee</strong> un grupo de apasionados por la música, principalmente clásica, que busca compartir la belleza, historia y técnica de este género con todos los amantes del arte musical.
+                </p>
+                <p class="card-text"><small class="text-muted">Fundado en 2025</small></p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+<!-- Cards del Equipo -->
+<h4 class="mb-3">Nuestro Equipo:</h4>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">     
+    <div class="card-body">
+        <h5 class="card-title">Juan Emmanuel Grey Suarez</h5>
+        <p class="card-text">Especialista en teoría musical. Comparte análisis profundos de composiciones clásicas.</p>
+      </div>
     </div>
+  </div>
 
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Jesús Alberto Baltazar Ramírez</h5>
+        <p class="card-text">Apasionado por la interpretación orquestal. Se enfoca en reseñas de conciertos y experiencias en vivo.</p>
+      </div>
     </div>
+  </div>
 
-    <p id="parrafo"> </p>
-    <footer class="pie-pagina">
-        <p>© 2025 Blog de Música Clásica | Contacto: info@musicaclasica.com</p>
-        <p>Desarrolladores</p>
-        <p>Juan Emmanuel Grey Suarez - j.greey1996@gmail.com</p>
-        <p>Jesús Alberto Baltazar Ramírez - baltazarramirez506@gmail.com</p>
-        <p>Angelica Chin Cantillo - angie.chin007@gmail.com</p>
-        <p>Leticia Janet Bermúdez Rebolledo - rebolledo@gmail.com</p>
-        <p>Carlos Ortiz Coreño - carlos72ortiz@gmail.com</p>
-        <p>Alan Uriel Garcia Campos  -  garciac.alanuriel@gmail.com</p>
-        <p>Luis Humberto Hernández B. - tudidi1101@gmail.com</p>
-        <p>Creado por el equipo de Code&Coffee</p>
-    </footer>
 
-    <!--Enlace CDN de bootstrap para JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Angélica Chin Cantillo</h5>
+        <p class="card-text">Investigadora de historia de la música clásica. Comparte biografías de grandes compositores.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Leticia Janet Bermúdez Rebolledo</h5>
+        <p class="card-text">Especialista en pedagogía musical. Promueve la apreciación de la música en la vida cotidiana.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Carlos Ortiz Coreño</h5>
+        <p class="card-text">Violinista y divulgador cultural. Comparte análisis de obras y recomendaciones musicales.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Alan Uriel García Campos</h5>
+        <p class="card-text">Curador de repertorio clásico. Recomienda piezas para descubrir y disfrutar en comunidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Luis Humberto Hernández B.</h5>
+        <p class="card-text">Entusiasta de la tecnología aplicada a la música. Explora nuevas formas de disfrutar conciertos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col-2"><!-- columna 3 --></div>
+    </div>
+<br>
+<br>
+    <div class="pie-pagina row mt-3">
+      <div class="col-12"> <!-- Aqui va el pie de pagina -->
+        <p>© 2025 Blog de Música Clásica | Creado por el equipo de Code&Coffee</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
