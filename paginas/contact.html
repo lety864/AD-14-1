@@ -12,7 +12,7 @@
     <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../index.html">
             <img src="../imagenes/code&coffee.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Code & coffee
         </a>
@@ -48,16 +48,37 @@
             <p>Telefono: 5500689734</p>
         </main>
 
+        <!-- Formulario -->
+
+    <div class="container-sm form-container rounded mt-4">
         <form>
-            <label for="email">Ingresa tu correo para contactarte con nosotros:</label>
-            <input type="email" id="email" name="email">
-            <br>
-            <label for="mensaje">Escribe tu mensaje:</label>
-            <br>
-            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
+            <!--Titulo -->
+            <div class="text-center"> <p class="fs-2 fw-bold">Formulario</p></div>
+            <!-- Correo electronico -->
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            
+            <!--Caja de texto -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Escriba una opión:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <!-- Check box -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            
+            <!-- Boton de enviar  -->
+            <button type="submit" class="btn btn-primary" id="liveAlertBtn2">Enviar</button>
         </form>
+    </div>
+    <div class="container-md">
+        <div id="liveAlertPlaceholder2"></div>
+    </div>
     </div>
     <p id="parrafo"> </p>
     <footer class="pie-pagina">
@@ -75,7 +96,7 @@
 
     <!--Enlace CDN de bootstrap para JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>
 
