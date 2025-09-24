@@ -35,56 +35,6 @@ body {
     text-shadow: 2px 2px 4px var(--black);
 }
 
-/* --- Barra de Navegación (Navbar) --- */
-.navbar {
-    /* --- NAVBAR NEGRO SEMI-TRANSPARENTE --- */
-    background-color: rgba(0, 0, 0, 0.7); /* Negro con 70% de opacidad */
-    padding: 15px 30px;
-    position: sticky; 
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.navbar-brand {
-    color: var(--white);
-    font-family: var(--font-headings);
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    margin-left: 25px;
-}
-
-.navbar-links a {
-    color: var(--platinum);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-}
-
-.navbar-links a:hover {
-    color: var(--orange-web);
-}
-
-
 /* --- Contenido Principal --- */
 .content {
     flex-grow: 1;
@@ -92,6 +42,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#parrafo{
+    height: 300px;
+}
+
+.caja{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 200px;
+    background-color: #003e60;
+    border: 2px solid #2196f3;
+    margin-bottom: 15px;
     text-align: center;
     padding: 50px 20px;
 }
@@ -173,4 +141,33 @@ h1, h2, h3 {
     margin-top: 20px;
     font-weight: bold;
     color: var(--white);
+}
+
+/* Estilo para el texto y los enlaces del navbar */
+.navbar-custom {
+    background-color: rgba(44, 62, 80, 0.95);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .nav-link.active {
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.navbar-custom .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.navbar-custom .nav-link:hover {
+    color: #FCA311; 
+
 }
