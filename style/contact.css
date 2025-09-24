@@ -17,36 +17,7 @@ body {
 
 }
 
-/* Estilo para el texto y los enlaces del navbar */
-.navbar-custom {
-    background-color: rgba(44, 62, 80, 0.95);
-}
 
-
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-
-.navbar-custom .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar-custom .nav-link.active {
-    color: #ffffff; 
-    font-weight: bold; 
-}
-
-.navbar-custom .nav-link.disabled {
-    color: rgba(255, 255, 255, 0.5); 
-}
-
-
-.navbar-custom .nav-link:hover {
-    color: #FCA311; 
-}
 
 
 #parrafo{
@@ -90,4 +61,35 @@ form {
         }
 .pie-pagina{
     text-align: center;
+}
+
+/* Estilo para el texto y los enlaces del navbar */
+.navbar-custom {
+    background-color: rgba(44, 62, 80, 0.95);
+}
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .nav-link.active {
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.navbar-custom .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+
+.navbar-custom .nav-link:hover {
+    color: #FCA311; 
 }
