@@ -1,23 +1,50 @@
-/* --- ESTILOS EXISTENTES --- */
+/* --- Variables de Color y Fuentes --- */
+:root {
+    --black: #000000;
+    --oxford-blue: #14213D;
+    --orange-web: #FCA311;
+    --platinum: #E5E5E5;
+    --white: #FFFFFF;
+
+    /* Fuentes Cinzel y Lato */
+    --font-headings: 'Cinzel', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+/* --- Estilos Globales y Reset Básico --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
+    /* --- IMAGEN DE FONDO RESTAURADA --- */
     background-image: url('../imagenes/fondo_index.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #cccccc; 
-    color: white; 
-    text-shadow: 2px 2px 4px #000000;
+    
+    color: var(--white);
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    /* Sombra de texto */
+    text-shadow: 2px 2px 4px var(--black);
 }
 
+/* --- Contenido Principal --- */
 .content {
-    padding: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 50px;
 }
-
-
 
 #parrafo{
     height: 300px;
@@ -34,19 +61,86 @@ body {
     border: 2px solid #2196f3;
     margin-bottom: 15px;
     text-align: center;
-    line-height: 40px;
-    border-radius: 8px;
-    font-style: italic;
+    padding: 50px 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-headings);
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* --- Caja de Introducción --- */
+.intro-box {
+    /* --- FONDO PLATINO TRANSPARENTE --- */
+    background-color: rgba(229, 229, 229, 0.85); /* 85% de opacidad */
+    
+    border: 2px solid var(--orange-web);
+    border-radius: 12px;
+    padding: 30px 40px;
+    max-width: 750px;
+    width: 100%;
+    
+    /* --- Cambio de color a azul para contraste --- */
+    color: var(--oxford-blue); /* Texto oscuro sobre fondo claro */
+    text-shadow: none;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.intro-box h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.2rem;
+    color: var(--oxford-blue);
+}
+
+.intro-box p {
+    line-height: 1.7;
+    font-size: 1.1rem;
     text-align: justify;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 
-.pie-pagina{
+/* --- Pie de Página --- */
+.pie-pagina {
+    background-color: rgba(20, 33, 61, 0.85); /* Oxford Blue con 85% de opacidad */
+    color: var(--platinum);
     text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.developers-section h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.developers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    line-height: 1.8;
+}
+
+.developers-list a {
+    color: var(--platinum);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developers-list a:hover {
+    color: var(--orange-web);
+}
+
+.team-credit {
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--white);
 }
 
 /* Estilo para el texto y los enlaces del navbar */
@@ -75,4 +169,5 @@ body {
 
 .navbar-custom .nav-link:hover {
     color: #FCA311; 
+
 }
